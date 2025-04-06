@@ -1,19 +1,68 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.1">
   <diagram name="Page-1" id="Wyn7bqY8Jm5lrV2yaqIB">
-    <mxGraphModel>
+    <mxGraphModel dx="1042" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="Start" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="8" y="8" width="95" height="54" as="geometry" />
+        <mxCell id="2" value="S3 bucket" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="95" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Stop" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="10" y="112" width="92" height="54" as="geometry" />
+        <mxCell id="3" value="EC2 instance" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="403" y="120" width="92" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" edge="1" parent="1" source="2" target="3">
+        <mxCell id="4" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-4" value="Aurora and RDS&#xa;Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380.5" y="220" width="137" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-7" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="447" y="174" as="sourcePoint" />
+            <mxPoint x="447" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-8" value="Lambda function" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="403" y="320" width="92" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-9" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="447" y="274" as="sourcePoint" />
+            <mxPoint x="447" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="448.5" y="374" as="sourcePoint" />
+            <mxPoint x="448.5" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-11" value="DynamoDB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="403" y="420" width="92" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-12" value="" style="endArrow=block;html=1;rounded=0;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rhaKonkmEZRlpid1yaP7-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="400" as="sourcePoint" />
+            <mxPoint x="570" y="347" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-13" value="API gateway" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="320" width="92" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.49;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="610" y="374" as="sourcePoint" />
+            <mxPoint x="610" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rhaKonkmEZRlpid1yaP7-15" value="IAM role" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="420" width="92" height="54" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
